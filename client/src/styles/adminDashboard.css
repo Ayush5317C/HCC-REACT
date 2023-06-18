@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --textColor: #0e2442;
+}
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: var(--textColor);
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.title {
+  font-size: 1.5rem;
+  color: var(--textColor);
+  margin-bottom: 0.5rem;
+}
+.active{
+  display: block !important;
+}
+/* Navbar section */
+.navContent {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--textColor);
+  color: white;
+  padding: 0.5rem 0;
+}
+.navContent .left {
+  margin-left: 2rem;
+}
+.navContent .right {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.navContent #adminName {
+  margin-right: 10px;
+}
+.profileImg img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/* user count section */
+.userCountSection {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.card {
+  background-image: linear-gradient(
+    to right top,
+    #001c44,
+    #002356,
+    #002b68,
+    #00327b,
+    #00398e
+  );
+  padding: 1rem;
+  border-radius: 5px;
+  width: 270px;
+  height: 200px;
+  color: white;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.userCount {
+  font-size: 4rem;
+}
+.userType {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+/* Pop Up Add user */
+.addUserModal {
+  border: none;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.addUserModal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.addUserModal .title{
+  display: none;
+}
+.addUserModal input {
+  border: 2px solid var(--textColor);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: var(--textColor);
+  width: 260px;
+}
+.addUserModal input::placeholder {
+  color: #001c44ce;
+}
+.addUserModal input[type="radio"] {
+  width: 20px;
+  visibility: hidden;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
+.cancelBtn {
+  margin-right: 0.5rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  background: rgb(233, 0, 0);
+}
+/* User List Table Section */
+.usersBtn {
+  display: inline-flex;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.usersBtn a {
+  text-decoration: none;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  margin: 0;
+  opacity: 0.9;
+  background-color: rgb(230, 230, 230);
+}
+.teacherListBtn {
+  border-left: 1px solid rgb(204, 204, 204);
+  border-right: 1px solid rgb(204, 204, 204);
+}
+.userList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userList .lists {
+  margin-top: 5rem;
+}
+.tableTop {
+  text-align: right;
+  color: var(--textColor);
+  margin-top: 1rem;
+}
+.tableTop .left {
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+}
+.tableTop .right input {
+  font-size: 0.9rem;
+  outline: none;
+  border: 2px solid var(--textColor);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.tableTop .right input::placeholder {
+  color: var(--textColor);
+}
+.tableContainer {
+  overflow-x: auto;
+}
+.activeUserList {
+  background: white !important;
+}
+.userListTable {
+  display: none;
+}
+.userListTable tr th:nth-child(1){
+  min-width: 70px;
+}
+.userListTable tr th:nth-child(2){
+  min-width: 200px;
+}
+.userListTable tr th:nth-child(3){
+  min-width: 300px;
+}
+.userListTable tr th:nth-child(4){
+  min-width: 160px;
+}
+.userListTable tr th:nth-child(5){
+  min-width: 80px;
+}
+.userListTable tr th:nth-child(6){
+  min-width: 80px;
+}
+.userListTable.active {
+  display: block;
+}
+.userListTable.active {
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.userListTable.active tr:nth-of-type(even) {
+  background-color: rgb(245, 245, 245);
+}
+.userListTable.active thead tr {
+  background-color: var(--textColor);
+  text-align: left;
+  color: white;
+}
+.userListTable.active tr th {
+  font-weight: 500;
+}
+.userListTable.active tr th,
+.userListTable.active tr td {
+  padding: 0.5rem 1.5rem;
+  white-space: nowrap;
+}
+.userListTable.active tbody tr td:nth-child(1) {
+  text-align: center;
+}
+.userListTable.active .fa-trash-o,
+.userListTable.active .fa-pencil-square-o {
+  margin: auto;
+}
+.userListTable.active tbody tr {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+.userListTable.active tbody tr:last-of-type {
+  border-bottom: 3px solid var(--textColor);
+}
+.fa {
+  border-radius: 5px;
+  font-size: 1rem !important;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid !important;
+  place-content: center;
+}
+.fa:hover {
+  cursor: pointer;
+}
+.fa-trash-o {
+  background: #c7211b;
+}
+.fa-pencil-square-o {
+  background: #008200;
+}

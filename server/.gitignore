@@ -1,0 +1,3 @@
+/mongoDBCredentials
+.env
+/node_modules
