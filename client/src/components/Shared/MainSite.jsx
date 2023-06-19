@@ -5,10 +5,10 @@ import {
 } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import Home from "./Home";
-import Courses from "./Courses";
-import Teachers from "./Teachers";
-import Events from "./Events";
+import Home from "../Home/Home";
+import Courses from "../Courses/Courses";
+import Teachers from "../Teachers/Teachers";
+import Events from "../Events/Events";
 
 const MainSite = () => {
   return (

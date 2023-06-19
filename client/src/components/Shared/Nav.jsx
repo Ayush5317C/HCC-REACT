@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-import MenuIcon from "./MenuIcon";
+import MenuIcon from "../Icons/MenuIcon";
 const Nav = () => {
   const [activeUrl, setActiveUrl] = useState("/");
   const [isMenuOpen, setMenuOpen] = useState(false); 

@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import Button from "./Button";
+import Button from "../Shared/Button";
 import { Link } from "react-router-dom";
-import EyeIcon from "./EyeIcon";
+import EyeIcon from "../Icons/EyeIcon";
 const LoginForm = () => {
   const [userDetails, setUserDetails] = useState({
     name: "",
     password: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
   const handleUserDetailChange = (e) => {
     setUserDetails({
       ...userDetails,
       [e.target.name]: e.target.value,
     });
   };
-  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="LoginForm">
       <form action="/login" method="post" className="logSignUpForm">

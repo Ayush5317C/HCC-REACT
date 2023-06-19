@@ -1,6 +1,6 @@
 import React from "react";
-import FormSideMenu from "./FormSideMenu";
-import LoginForm from "./LoginForm";
+import FormSideMenu from "../Forms/FormSideMenu";
+import LoginForm from "../Forms/LoginForm";
 const Login = () => {
   return (
     <div className="">

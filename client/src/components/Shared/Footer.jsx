@@ -19,13 +19,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="socialMediaLink">
-          <a href="" className="fbLink">
+          <a href="https://www.facebook.com/hetaudacitycollege.edu.np" className="fbLink">
             <i className="fa fa-facebook" aria-hidden="true"></i>
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/explore/locations/1013966905/hetauda-city-college/?hl=en">
             <i className="fa fa-instagram" aria-hidden="true"></i>
           </a>
-          <a href="">
+          <a href="https://www.youtube.com/@hetaudacitycollege4003">
             <i className="fa fa-youtube-play" aria-hidden="true"></i>
           </a>
         </div>

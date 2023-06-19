@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FormRow } from "./LoginForm";
-import Button from "./Button";
+import Button from "../Shared/Button";
 import { Link } from "react-router-dom";
-import EyeIcon from "./EyeIcon";
+import EyeIcon from "../Icons/EyeIcon";
 
 const SignupForm = () => {
   const [showPassword, setShowPassword] = useState(false);

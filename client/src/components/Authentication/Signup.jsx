@@ -1,6 +1,6 @@
 import React from "react";
-import FormSideMenu from "./FormSideMenu";
-import SignupForm from "./SignupForm";
+import FormSideMenu from "../Forms/FormSideMenu";
+import SignupForm from "../Forms/SignupForm";
 const Signup = () => {
   return (
     <div class="signUpContainer">

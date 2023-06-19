@@ -1,7 +1,7 @@
 import React from "react";
 import TeacherCard from "./TeacherCard";
 import TeacherProfile from "./TeacherProfile";
-import images from "../img/images";
+import images from "../../img/images";
 const Teachers = () => {
   const principalDetail = {
     teacherName: "Shree Karki",

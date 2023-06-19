@@ -1,6 +1,6 @@
 import React from "react";
 import Course from "./Course";
-import images from "../img/images";
+import images from "../../img/images";
 const Courses = () => {
   const courseList = [
     {

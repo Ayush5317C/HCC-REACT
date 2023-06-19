@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Login from "./Login";
-import Signup from "./Signup";
-import Dashboard from "./Dashboard";
-import MainSite from "./MainSite";
-import "../styles/style.css";
-import "../styles/responsive.css";
+import Login from "../Authentication/Login";
+import Signup from "../Authentication/Signup";
+import Dashboard from "../Admin/Dashboard";
+import MainSite from "../Shared/MainSite";
+import "../../styles/style.css";
+import "../../styles/responsive.css";
 const App = () => {
   return (
     <BrowserRouter>
